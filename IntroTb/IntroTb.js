@@ -74,6 +74,13 @@ export default class IntroTb extends Sprite {
     }
   }
 
+  *whenGreenFlagClicked3() {
+    this.moveAhead(1000);
+    this.moveAhead(1000);
+    this.moveAhead(1000);
+    this.moveAhead(1000);
+  }
+
   *whenIReceiveStart() {
     while (true) {
       null;

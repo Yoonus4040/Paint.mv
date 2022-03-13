@@ -48,7 +48,8 @@ export default class PaintButton extends Sprite {
   *whenGreenFlagClicked() {
     this.visible = false;
     while (true) {
-      this.moveAhead(100);
+      this.moveAhead(1000);
+      this.moveAhead(1000);
       if (this.stage.vars.darkAndLight == "light") {
         this.costume = "costume1";
         if (this.stage.vars.penOrPaint == "paint") {

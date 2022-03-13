@@ -47,7 +47,8 @@ export default class PencilButton extends Sprite {
   }
 
   *whenGreenFlagClicked() {
-    this.moveAhead(100);
+    this.moveAhead(1000);
+    this.moveAhead(1000);
     while (true) {
       if (this.stage.vars.darkAndLight == "light") {
         this.costume = "costume1";
