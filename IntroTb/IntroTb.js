@@ -74,10 +74,6 @@ export default class IntroTb extends Sprite {
     }
   }
 
-  *whenGreenFlagClicked3() {
-    yield* this.playSoundUntilDone("Dance_Monkey");
-  }
-
   *whenIReceiveStart() {
     while (true) {
       null;
