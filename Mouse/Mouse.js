@@ -59,8 +59,7 @@ export default class Mouse extends Sprite {
 
   *whenGreenFlagClicked() {
     while (true) {
-      /* TODO: Implement looks_gotofrontback */ null;
-      /* TODO: Implement looks_gotofrontback */ null;
+      this.moveAhead(50000000);
       this.goto(this.mouse.x, this.mouse.y);
       if (this.stage.vars.darkAndLight == "light") {
         if (this.touching(this.sprites["Back"].andClones())) {
@@ -95,7 +94,7 @@ export default class Mouse extends Sprite {
         if (
           this.touching(this.sprites["PaintButton"].andClones()) ||
           this.touching(this.sprites["EraserButton"].andClones()) ||
-            this.touching(this.sprites["Pencil"].andClones())
+          this.touching(this.sprites["Pencil"].andClones())
         ) {
           /* TODO: Implement looks_gotofrontback */ null;
           this.costume = "costume5";
@@ -119,7 +118,7 @@ export default class Mouse extends Sprite {
         if (
           this.touching(this.sprites["PaintButton"].andClones()) ||
           this.touching(this.sprites["EraserButton"].andClones()) ||
-            this.touching(this.sprites["Pencil"].andClones())
+          this.touching(this.sprites["Pencil"].andClones())
         ) {
           /* TODO: Implement looks_gotofrontback */ null;
           this.costume = "costume5";
@@ -145,7 +144,7 @@ export default class Mouse extends Sprite {
 
   *whenGreenFlagClicked2() {
     while (true) {
-      /* TODO: Implement looks_goforwardbackwardlayers */ null;
+      this.moveAhead(50000000);
       if (this.mouse.down) {
         if (!this.touching(this.sprites["Canvas"].andClones())) {
           yield* this.playSoundUntilDone("Monster Text");
